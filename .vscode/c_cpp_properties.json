@@ -14,14 +14,25 @@
         {
             "name": "win32",
             "includePath": [
-                "${workspaceFolder}/**"
+                "c:/Users/melak/Documents/GitHub/alx-higher_level_programming/**"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
             ],
-            "compilerPath": "/usr/bin/gcc"
+            "compilerPath": "C:\\MinGW\\bin",
+            "compilerPathInCppPropertiesJson": "C:\\MinGW\\bin",
+            "mergeConfigurations": false,
+            "browse": {
+                "path": [
+                    "c:/Users/melak/Documents/GitHub/alx-higher_level_programming/**",
+                    "c:/Users/melak/Documents/GitHub/alx-higher_level_programming"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "cStandard": "gnu17",
+            "cppStandard": "c++23"
         }
     ],
     "version": 4
