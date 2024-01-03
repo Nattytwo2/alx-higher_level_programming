@@ -1,0 +1,75 @@
+===============================
+5-text_indentation.py
+===============================
+
+Function that prints a text with 2 new lines after each of these characters: ., ? and :
+
+=======
+
+``text_indentation()`` prints a text with 2 new lines after each of these characters: ., ? and :
+
+::
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+    >>> text_indentation("Hello.")
+    Hello.
+    <BLANKLINE>
+
+It works with defined variable
+
+::
+    >>> t = "Beautiful is better than ugly. : : ? ? Explicit is better than implicit."
+    >>> text_indentation(t)
+    Beautiful is better than ugly.
+    <BLANKLINE>
+    :
+    <BLANKLINE>
+    :
+    <BLANKLINE>
+    ?
+    <BLANKLINE>
+    ?
+    <BLANKLINE>
+    Explicit is better than implicit.
+    <BLANKLINE>
+
+It works with str
+
+::
+    >>> text_indentation(str(1231) + ".")
+    1231.
+    <BLANKLINE>
+
+It works with t = " : . ? "
+    >>> t=" : . ? "
+    >>> text_indentation(t)
+    :
+    <BLANKLINE>
+    .
+    <BLANKLINE>
+    ?
+    <BLANKLINE>
+
+TypeError string
+
+::
+
+    >>> text_indentation(1)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+TypeError None
+
+::
+
+    >>> text_indentation(None)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+TypeError Boolean
+
+::
+
+    >>> text_indentation(True)
+    Traceback (most recent call last):
+    TypeError: text must be a string
